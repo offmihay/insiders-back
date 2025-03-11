@@ -24,6 +24,7 @@ model Task {
   name        String
   description String
   status      Status
+  createdAt       DateTime                             @default(now()) @map("created_at") @db.Timestamptz()
 
   @@map("tasks")
 }

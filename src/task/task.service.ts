@@ -11,6 +11,9 @@ export class TaskService {
       where: {
         status: query.status,
       },
+      orderBy: {
+        createdAt: 'desc',
+      },
     });
   }
 
